@@ -1,0 +1,58 @@
+.moving-img-wrapper-planeta {
+  @media screen and (min-width: 1200px) {
+    min-height: 80vh;
+  }
+  .moving-obj-planeta {
+    position: absolute;
+    z-index: 2;
+  }
+
+  #planeta-bordel {
+    top: 24%;
+    left: 58%;
+    max-width: 150px;
+    z-index: 3;
+
+    @media screen and (min-width: 1800px) {
+      top: 20%;
+      left: 40%;
+    }
+  }
+
+  #planeta-planeta-saturn {
+    top: 12%;
+    left: 60%;
+    max-width: 100px;
+    animation: dance 3s linear infinite;
+  }
+
+  #planeta-letadlo {
+    top: 16%;
+    left: -16%;
+    max-width: 90px;
+  }
+
+  #planeta-planeta {
+    top: 10%;
+    left: -20%;
+    max-width: 320px;
+  }
+}
+
+@keyframes dance {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(25deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
